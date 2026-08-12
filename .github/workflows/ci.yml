@@ -1,0 +1,29 @@
+name: Solidity CI
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  foundry:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: foundry-rs/foundry-toolchain@v1
+        with:
+          version: stable
+      - run: forge build --sizes
+      - run: forge test -vvv
+      - run: forge test --match-path 'test/Fuzz.t.sol' -vv
+      - run: forge test --match-path 'test/invariant/*.t.sol' -vv
+  slither:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: foundry-rs/foundry-toolchain@v1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install slither-analyzer
+      - run: forge build
+      - run: slither . --foundry-out-directory out --exclude naming-convention,solc-version
