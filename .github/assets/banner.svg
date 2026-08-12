@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340">
+  <defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#101626"/><stop offset="1" stop-color="#271952"/></linearGradient><linearGradient id="a"><stop stop-color="#68e0c3"/><stop offset="1" stop-color="#9f87ff"/></linearGradient></defs>
+  <rect width="1200" height="340" rx="28" fill="url(#bg)"/><g opacity=".1" stroke="#9f87ff"><path d="M0 68H1200M0 170H1200M0 272H1200M215 0V340M500 0V340M785 0V340M1070 0V340"/></g>
+  <g transform="translate(72 72)"><path d="M99 5 174 40v56c0 48-29 84-75 101-46-17-75-53-75-101V40L99 5Z" fill="#19243a" stroke="url(#a)" stroke-width="5"/><path d="M65 99h68M99 65v68" stroke="#68e0c3" stroke-width="8" stroke-linecap="round"/><circle cx="99" cy="99" r="20" fill="#19243a" stroke="#9f87ff" stroke-width="5"/></g>
+  <text x="300" y="92" fill="#68e0c3" font-family="Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="6">SOLIDITY · FOUNDRY · SECURITY-FIRST</text>
+  <text x="300" y="158" fill="#fff" font-family="Arial,sans-serif" font-size="52" font-weight="800">MILESTONE ESCROW</text>
+  <text x="300" y="214" fill="#fff" font-family="Arial,sans-serif" font-size="52" font-weight="800">PROTOCOL</text>
+  <rect x="302" y="238" width="230" height="5" rx="3" fill="url(#a)"/>
+  <text x="300" y="286" fill="#cbd2e5" font-family="Arial,sans-serif" font-size="21">Staged payments · Review timeouts · Bounded arbitration</text>
+</svg>
+
